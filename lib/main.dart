@@ -43,18 +43,23 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(16.0),
+        padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            priceTextField(),
+            Text("Change Calculation",style: TextStyle(fontFamily: "maa",fontSize: 48, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,color: Colors.deepPurple,backgroundColor: Colors.pink ,),),
+            
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(8.0),
+              child: priceTextField(),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
               child: amountTextField(),
             ),
             calculateButton(),
             showTotalText(),
             Padding(
-              padding: const EdgeInsets.all(16.0),
+              padding: const EdgeInsets.all(8.0),
               child: recieveMoneyTextField(),
             ),
 
@@ -64,6 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
     );
+    
   }
 
   Widget calculateButton() {
@@ -101,6 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+
   Widget showTotalText() {
     return Text("Total :$_total Bath");
   }
@@ -131,3 +138,4 @@ class _MyHomePageState extends State<MyHomePage> {
     return Text("Change :$_change Bath");
   }
 }
+
