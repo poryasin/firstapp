@@ -47,7 +47,10 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: [
             Text("Change Calculation",style: TextStyle(fontFamily: "maa",fontSize: 48, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,color: Colors.deepPurple,backgroundColor: Colors.pink ,),),
-            
+            SizedBox(height: 20,),
+            Image.asset("assets/catmeow.jpg",height: 100,),
+            SizedBox(height: 20,),
+            Image.network('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzd3ZDBibmc2bGg5eXI4bnpnMWduYWVybzdoeDViZzRrMnk0N2E3biZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o85gdhlpxVz8TjsTC/giphy.gif',height: 100,),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: priceTextField(),
