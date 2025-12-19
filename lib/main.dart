@@ -3,6 +3,7 @@ import 'package:firstapp/pages/contact.dart';
 import 'package:firstapp/pages/home.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'firstapp',
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.pink)),
-      home: const MyHomePage(title: 'porya shop'),
+      home: const MyHomePage(title: 'Computer Knowledge' ),
     );
   }
 }
