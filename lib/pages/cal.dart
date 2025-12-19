@@ -22,7 +22,7 @@ class _CalculatePageStage extends State<CalculatePage> {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            Text("Change Calculation",style: TextStyle(fontFamily: "maa",fontSize: 48, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,color: Colors.deepPurple,backgroundColor: Colors.pink ,),),
+            Text("Change Calculation",style: TextStyle(fontFamily: "maa",fontSize: 24, fontWeight: FontWeight.bold, fontStyle: FontStyle.italic,color: Colors.deepPurple,backgroundColor: Colors.pink ,),),
             SizedBox(height: 20,),
             Image.asset("assets/catmeow.jpg",height: 100,),
             SizedBox(height: 20,),
